@@ -1,0 +1,55 @@
+/* 内容区域（整体） */
+.content {
+    background-color: rgb(128, 128, 128);
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+/* 每一屏的包裹区 */
+.content .container {
+    position: relative;
+}
+
+/* 每一屏 */
+.content .container .content-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background-position: 50% 50% !important;
+    overflow: hidden;
+}
+
+.content .container>.home {
+    background: url('../img/bg1.jpg') no-repeat;
+}
+
+.content .container>.course {
+    background: url('../img/bg2.jpg') no-repeat;
+}
+
+.content .container>.works {
+    background: url('../img/bg4.jpg') no-repeat;
+}
+
+.content .container>.about {
+    background: url('../img/bg3.jpg') no-repeat;
+}
+
+.content .container>.team {
+    background: url('../img/bg5.jpg') no-repeat;
+}
+
+
+/* 每一屏中的内容区 */
+.content .container .content-list section {
+    width: 1100px;
+    height: 520px;
+    /* background-color: pink; */
+}
+
+
+
+
+
+

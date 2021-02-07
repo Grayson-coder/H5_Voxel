@@ -1,0 +1,120 @@
+/* 出入场动画 */
+
+/* 第一屏（轮播图） */
+.carousel,
+.ipresenter-items {
+    transition: 1s transform, 1s opacity;
+}
+
+
+/* 第二屏（飞机） */
+.course section .plane1,
+.course section .plane2,
+.course section .plane3 {
+    position: absolute;
+    transition: 1s transform;
+}
+
+.course section .plane1 {
+    width: 359px;
+    height: 283px;
+    background: url('../img/plane1.png') no-repeat;
+    left: 300px;
+    top: -100px;
+}
+
+.course section .plane2 {
+    width: 309px;
+    height: 249px;
+    background: url('../img/plane2.png') no-repeat;
+    left: -100px;
+    top: 200px;
+}
+
+.course section .plane3 {
+    width: 230px;
+    height: 182px;
+    background: url('../img/plane3.png') no-repeat;
+    left: 300px;
+    top: 400px;
+}
+
+/* 第三屏（铅笔） */
+.works section .pencil1,
+.works section .pencil2,
+.works section .pencil3 {
+    position: absolute;
+    transition: 1s transform;
+}
+
+.works section .pencil1 {
+    width: 180px;
+    height: 97px;
+    background: url('../img/pencel1.png') no-repeat;
+    left: 500px;
+    top: 0;
+}
+
+.works section .pencil2 {
+    width: 268px;
+    height: 38px;
+    background: url('../img/pencel2.png') no-repeat;
+    left: 300px;
+    top: 250px;
+}
+
+.works section .pencil3 {
+    width: 441px;
+    height: 231px;
+    background: url('../img/pencel3.png') no-repeat;
+    left: 650px;
+    top: 300px;
+    transform: rotate();
+}
+
+
+/* 第四屏（蜘蛛侠） */
+.about .item {
+    transition: 1s transform;
+}
+
+
+/* 第五屏 */
+.team .title,
+.team .desc {
+    transition: 1s transform;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 开机动画 */
+.start {
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+}
+
+.start .up,
+.start .down {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    top: 0;
+    background-color: skyblue;
+    transition: 1.5s top;
+}
+
+.start .line {
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0vw;
+    background-color: white;
+    transition: 1.5s width;
+}

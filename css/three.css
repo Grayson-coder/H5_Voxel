@@ -1,0 +1,94 @@
+/* 第三屏 */
+.content .container .works section {
+    position: relative;
+}
+
+.content .container .works section>.title {
+    margin: 50px 0 100px 50px;
+}
+
+.content .container .works section>.list {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin-left: 50px;
+}
+
+.content .container .works section>.list .item {
+    position: relative;
+    width: 220px;
+    height: 133px;
+    margin-right: 1px;
+    overflow: hidden;
+}
+.content .container .works section>.list .item:last-child {
+    width: 332px;
+}
+
+/* 遮罩层 */
+.content .container .works section>.list .item .mask {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: rgb(25, 25, 25);
+    opacity: 0;
+    transition: 1s opacity;
+    color: white;
+}
+
+.content .container .works section>.list .item:hover .mask {
+    opacity: .8;
+}
+
+/* 遮罩层的图标 */
+.content .container .works section>.list .item .mask .icon {
+    width: 32px;
+    height: 34px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: url('../img/zoomico.png') no-repeat;
+    transition: 1s transform;
+}
+
+.content .container .works .item .mask .icon:hover {
+    transform: scale(1.5);
+}
+
+.content .container .works section>.list .item>img {
+    transition: 1s transform;
+}
+
+.content .container .works section>.list .item:hover>img {
+    transform: scale(1.5) rotate(45deg);
+}
+
+
+/* 机器人 */
+.content .container .works>section>.robot {
+    position: absolute;
+    left: 900px;
+    top: 170px;
+    width: 167px;
+    height: 191px;
+    animation: robotMove 4s infinite linear;
+}
+
+/* 机器人的动画 */
+@keyframes robotMove {
+    0% {
+        transform: translateX(0) rotateY(0deg);
+    }
+    49% {
+        transform: translateX(-490px) rotateY(0deg);
+    }
+    50% {
+        transform: translateX(-500px) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(0px) rotateY(180deg);
+    }
+}

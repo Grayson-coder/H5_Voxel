@@ -1,0 +1,24 @@
+.wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* .arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 0;
+    border: 15px solid transparent;
+    border-bottom: 15px solid white;
+    transform: rotate(180deg);
+} */
+
+
+.common-title {
+    color: #009ee0;
+    font-size: 80px;
+    line-height: 0.8;
+    font-weight: bold;
+    letter-spacing: -5px;
+}

@@ -1,0 +1,74 @@
+header .wrap {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    background-color: white;
+}
+
+/* logo区域 */
+header .wrap .logo {
+    margin-top: 30px;
+}
+
+/* 音频 */
+header .wrap .logo .music-icon {
+    width: 14px;
+    height: 14px;
+    margin: 18px 0 0 5px;
+}
+
+header .wrap .logo .music-icon:hover {
+    cursor: pointer;
+}
+
+/* 导航区域 */
+header .wrap .nav {
+    display: flex;
+    margin-top: 50px;
+}
+
+header .wrap .nav li {
+    position: relative;
+    margin-left: 40px;
+    color: blue;
+}
+
+/* 导航菜单 */
+header .wrap .nav li a:active {
+    color: black;
+}
+
+header .wrap .nav li a .active {
+    position: absolute;
+    width: 0px;
+    overflow: hidden;
+    transition: .5s linear width;
+    color: black;
+}
+
+header .wrap .nav li:hover .active {
+    width: 100%;
+}
+
+header .wrap .nav li.active .active {
+    width: 100%;
+}
+
+
+
+header .wrap {
+    position: relative;
+}
+
+
+/* 小箭头 */
+header .wrap .arrow {
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    width: 21px;
+    height: 11px;
+    background: url('../img/menuIndicator.png');
+    z-index: 9;
+}
